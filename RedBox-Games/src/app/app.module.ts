@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { WebHeaderComponent } from './web-header/web-header.component';
 import { WebFooterComponent } from './web-footer/web-footer.component';
+import { WebLateralMenuComponent } from './web-lateral-menu/web-lateral-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WebFooterComponent } from './web-footer/web-footer.component';
     VideogameSearchComponent,
     MainMenuComponent,
     WebHeaderComponent,
-    WebFooterComponent
+    WebFooterComponent,
+    WebLateralMenuComponent
   ],
   imports: [
     BrowserModule,

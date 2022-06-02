@@ -1,7 +1,8 @@
-<ul>
-    <li *ngFor="let videogame of videogames">
-        <img src="{{videogame.img}}" width="200" height="200">
-        {{videogame.name}}
-        
-    </li>
-</ul>
+<main>
+    <div class="grid-container">
+        <div class="grid-item" *ngFor="let videogame of videogames">
+          <img src="{{videogame.img}}"><br>
+          {{videogame.name}}
+        </div> 
+      </div>      
+</main>

@@ -1,6 +1,7 @@
 header{
     background-color: #404040;
     height: 10vh;
+    z-index: 100;
 }
 
 h1{
