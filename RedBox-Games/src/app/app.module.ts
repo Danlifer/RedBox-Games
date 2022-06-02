@@ -8,6 +8,8 @@ import { VideogameSearchComponent } from './videogame-search/videogame-search.co
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { WebHeaderComponent } from './web-header/web-header.component';
+import { WebFooterComponent } from './web-footer/web-footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormsModule } from '@angular/forms';
     VideogameDetailComponent,
     VideogameListComponent,
     VideogameSearchComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    WebHeaderComponent,
+    WebFooterComponent
   ],
   imports: [
     BrowserModule,
