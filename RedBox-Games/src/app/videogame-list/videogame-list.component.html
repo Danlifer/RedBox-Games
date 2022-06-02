@@ -1,8 +1,7 @@
-<div class="videogame-list">
-    <ul>
-        <li *ngFor="let videogame of videogames">
-            {{videogame.name}}
-        </li>
-    </ul>
-    
-</div>
+<ul>
+    <li *ngFor="let videogame of videogames">
+        <img src="{{videogame.img}}" width="200" height="200">
+        {{videogame.name}}
+        
+    </li>
+</ul>
