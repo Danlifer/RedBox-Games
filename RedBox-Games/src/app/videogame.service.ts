@@ -1,17 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, of, tap } from 'rxjs';
 import { Videogame } from './videogame';
 import { VIDEOGAMES } from './mock-videogame'
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VideogameService {
 
-  constructor() { }
+  VideogamesUrl='api/Videogames'
+
+  constructor(private http:HttpClient) { }
 
   getVideogames(): Observable<Videogame[]> {
-    const videogames = of(VIDEOGAMES);
-    return videogames;
+    return this.http.get<Videogame[]>(this.VideogamesUrl);
   }
 }

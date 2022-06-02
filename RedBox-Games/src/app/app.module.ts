@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { WebHeaderComponent } from './web-header/web-header.component';
 import { WebFooterComponent } from './web-footer/web-footer.component';
 import { WebLateralMenuComponent } from './web-lateral-menu/web-lateral-menu.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,11 @@ import { WebLateralMenuComponent } from './web-lateral-menu/web-lateral-menu.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+    InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
