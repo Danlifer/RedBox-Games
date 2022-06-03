@@ -1,8 +1,8 @@
 aside{
-    height: 100vh;
+    height: 200vh;
     width: 10vw;
-    position: sticky;
-    z-index: -1;
+    position: relative;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #FF0400;
@@ -17,3 +17,11 @@ aside{
         padding: 1em;
         color: white;
     }
+
+        a:hover{
+            background-color: rgb(255, 136, 136);
+        }
+
+        a:active{
+            background-color: rgb(255, 174, 174);
+        }
