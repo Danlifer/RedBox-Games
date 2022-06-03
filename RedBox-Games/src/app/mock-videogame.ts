@@ -1,4 +1,4 @@
-import { Videogame } from './videogame'
+import { Videogame } from './models/videogame'
 
 export const VIDEOGAMES: Videogame[] = [
     {name:'The Legend of Zelda: Breath of the Wild',img:'assets\\img\\ZeldaBOTW.png',id:1},

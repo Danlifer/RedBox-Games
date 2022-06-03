@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, tap } from 'rxjs';
-import { Videogame } from './videogame';
-import { VIDEOGAMES } from './mock-videogame'
+import { Videogame } from '../models/videogame';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

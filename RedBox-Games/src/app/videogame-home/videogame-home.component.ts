@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Videogame } from '../videogame';
-import { VideogameService } from '../videogame.service'
+import { Videogame } from '../models/videogame';
+import { VideogameService } from '../services/videogame.service'
 
 @Component({
-  selector: 'app-videogame-list',
-  templateUrl: './videogame-list.component.html',
-  styleUrls: ['./videogame-list.component.css']
+  selector: 'app-videogame-home',
+  templateUrl: './videogame-home.component.html',
+  styleUrls: ['./videogame-home.component.css']
 })
 export class VideogameListComponent implements OnInit {
 
