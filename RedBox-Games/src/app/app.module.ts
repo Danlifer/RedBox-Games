@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { VideogameDetailComponent } from './videogame-detail/videogame-detail.component';
-import { VideogameListComponent } from './videogame-home/videogame-home.component';
+import { VideogameHomeComponent } from './videogame-home/videogame-home.component';
 import { VideogameSearchComponent } from './videogame-search/videogame-search.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AppRoutingModule } from './routing/app-routing.module';
@@ -19,7 +19,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
   declarations: [
     AppComponent,
     VideogameDetailComponent,
-    VideogameListComponent,
+    VideogameHomeComponent,
     VideogameSearchComponent,
     MainMenuComponent,
     WebHeaderComponent,

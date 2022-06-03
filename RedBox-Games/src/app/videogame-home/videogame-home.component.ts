@@ -7,7 +7,7 @@ import { VideogameService } from '../services/videogame.service'
   templateUrl: './videogame-home.component.html',
   styleUrls: ['./videogame-home.component.css']
 })
-export class VideogameListComponent implements OnInit {
+export class VideogameHomeComponent implements OnInit {
 
   videogames : Videogame[]=[];
 
