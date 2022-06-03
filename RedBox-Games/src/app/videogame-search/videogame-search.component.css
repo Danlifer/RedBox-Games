@@ -1,0 +1,13 @@
+#search-box{
+    display: flex;
+    justify-content: end;
+    left: 70vw;
+    margin: 1em 10em 1em 10em;
+    padding: .5em 3em .5em 1em;
+    border: 1px solid white;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}

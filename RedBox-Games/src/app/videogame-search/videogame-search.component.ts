@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-videogame-search',
+  selector: 'videogame-search',
   templateUrl: './videogame-search.component.html',
   styleUrls: ['./videogame-search.component.css']
 })
