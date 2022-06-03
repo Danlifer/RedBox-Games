@@ -14,6 +14,7 @@ import { WebLateralMenuComponent } from './web-lateral-menu/web-lateral-menu.com
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
+import { VideogameFilterComponent } from './videogame-home/videogame-filter/videogame-filter.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     MainMenuComponent,
     WebHeaderComponent,
     WebFooterComponent,
-    WebLateralMenuComponent
+    WebLateralMenuComponent,
+    VideogameFilterComponent
   ],
   imports: [
     BrowserModule,
