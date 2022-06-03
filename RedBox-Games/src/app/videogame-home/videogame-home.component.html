@@ -1,8 +1,2 @@
-<main>
-    <div class="grid-container">
-        <div class="grid-item" *ngFor="let videogame of videogames">
-          <img src="{{videogame.img}}"><br>
-          {{videogame.name}}
-        </div> 
-      </div>      
-</main>
+<videogame-filter></videogame-filter>
+<videogame-list [filter] = "filter" [videogames] = "videogames"></videogame-list>

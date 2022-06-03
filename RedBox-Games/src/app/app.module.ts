@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { VideogameDetailComponent } from './videogame-detail/videogame-detail.component';
-import { VideogameHomeComponent } from './videogame-home/videogame-home.component';
+
 import { VideogameSearchComponent } from './videogame-search/videogame-search.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AppRoutingModule } from './routing/app-routing.module';
@@ -14,19 +14,21 @@ import { WebLateralMenuComponent } from './web-lateral-menu/web-lateral-menu.com
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
-import { VideogameFilterComponent } from './videogame-home/videogame-filter/videogame-filter.component';
-
+import { VideogameFilterComponent } from './videogame-home/components/videogame-filter/videogame-filter.component';
+import { VideogameHomeComponent } from './videogame-home/videogame-home.component';
+import { VideogameListComponent } from './videogame-home/components/videogame-list/videogame-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     VideogameDetailComponent,
-    VideogameHomeComponent,
     VideogameSearchComponent,
     MainMenuComponent,
     WebHeaderComponent,
     WebFooterComponent,
     WebLateralMenuComponent,
-    VideogameFilterComponent
+    VideogameFilterComponent,
+    VideogameHomeComponent,
+    VideogameListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { VideogameFilterComponent } from './videogame-home/videogame-filter/vide
     InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
+  providers: [VideogameHomeComponent,VideogameListComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
