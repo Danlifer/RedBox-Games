@@ -1,7 +1,7 @@
 <main>
     <div class="grid-container">
         <div class="grid-item" *ngFor="let videogame of videogames" >
-          <img src="{{videogame.img}}"><br>
+          <a routerLink="/detail/{{videogame.id}}"><img src="{{videogame.img}}"><br></a>
           {{videogame.name}}<br><br>
           {{videogame.year}}
           {{videogame.company}}
