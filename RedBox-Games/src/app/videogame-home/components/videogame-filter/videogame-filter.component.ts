@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { VideogameHomeComponent } from '../../videogame-home.component';
 
 @Component({
@@ -8,18 +8,12 @@ import { VideogameHomeComponent } from '../../videogame-home.component';
 })
 export class VideogameFilterComponent implements OnInit {
 
-  constructor(private videogameHome:VideogameHomeComponent) { }
-  
-  public setFilterByName(){
-    this.videogameHome.setFilter(1);
-  }
+  @Output() indexFilter = new EventEmitter<number>();
 
-  public setFilterByYear(){
-    this.videogameHome.setFilter(2);
-  }
+  constructor() { }
 
-  public setFilterByCompany(){
-    this.videogameHome.setFilter(3);
+  addFilter(value: number) {
+    this.indexFilter.emit(value);
   }
 
   ngOnInit(): void {
