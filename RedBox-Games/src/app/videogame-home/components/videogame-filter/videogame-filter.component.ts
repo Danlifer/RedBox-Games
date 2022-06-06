@@ -22,9 +22,6 @@ export class VideogameFilterComponent implements OnInit {
     this.videogameHome.setFilter(3);
   }
 
-  
   ngOnInit(): void {
-
   }
-
 }

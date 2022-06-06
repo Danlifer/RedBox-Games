@@ -39,7 +39,4 @@ export class VideogameHomeComponent implements OnInit {
     this.videogameService.getVideogames()
         .subscribe(videogames => this.videogames = videogames);
   }
-
-  
-
 }

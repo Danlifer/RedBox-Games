@@ -14,12 +14,8 @@ export class VideogameListComponent implements OnInit,OnChanges {
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    
-    
       this.filter=changes['filter'].currentValue;
       this.filterArray();
-    
-    
   }
 
   ngOnInit(): void {
@@ -46,12 +42,13 @@ public filterArray(){
     var nameB = b.name;
     
     if(nameA < nameB){
-    return -1;
+      return -1;
     }
+
     if(nameA > nameB){
-    return 1;
+      return 1;
     }
-    return 0;
+      return 0;
     })
   }
 
@@ -70,13 +67,12 @@ public filterArray(){
     var nameB = b.company;
     
     if(nameA < nameB){
-    return -1;
+      return -1;
     }
     if(nameA > nameB){
-    return 1;
+      return 1;
     }
-    return 0;
+      return 0;
     })
   }
-
 }

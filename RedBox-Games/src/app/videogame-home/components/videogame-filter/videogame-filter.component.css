@@ -3,10 +3,11 @@ div{
     display: flex;
     flex-direction: row;
     margin-top: 2.5em;
+    left: 14em;
 }
 
     p{
-        color: white;
+        color: black;
     }
 
     div > button{
