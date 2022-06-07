@@ -1,3 +1,7 @@
+*{
+  z-index: -1;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -19,4 +23,6 @@ img{
 
 li{
     list-style: none;
+    text-decoration: none;
+    cursor: pointer;
 }

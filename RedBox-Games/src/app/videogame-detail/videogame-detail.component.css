@@ -1,0 +1,29 @@
+*{
+    z-index: -1;
+}
+
+.game-detail{
+    text-align: center;
+}
+
+h1{
+    padding: 1em 0 1em 0;
+}
+    
+img{
+    max-width: 15%;
+    max-height: 15%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 5px 10px 10px black;
+}
+
+.more-detail{
+    justify-content: left;
+    padding-top: 3em;
+    width: 100%;
+    line-height: 4em;
+}

@@ -1,8 +1,12 @@
+*{
+    z-index: 400;
+}
+
 #search-box{
     display: flex;
     justify-content: end;
-    left: 70vw;
-    margin: 1em 10em 1em 10em;
+    top: 100px;
+    margin: 1em 5em 1em 5em;
     padding: .5em 3em .5em 1em;
     border: 1px solid white;
     border-radius: 2em;
@@ -11,3 +15,27 @@
     -ms-border-radius: 2em;
     -o-border-radius: 2em;
 }
+
+div{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    margin: 1em 10em 1em 10em;
+    padding: .5em 3em .5em 1em;
+    z-index: 300;
+
+}
+
+li{
+    background-color: rgba(255, 4, 0, .5);
+    list-style: none;
+    border: 10px solid rgba(255, 4, 0, 0);
+}
+
+    a{
+        font-weight: 800;
+        color: white;
+        font-size: 1.2em;
+        margin: 1em 0 1em 0;
+        text-decoration: none;
+    }

@@ -1,12 +1,13 @@
 <div id="search-component">
   <br>
-  <input type="text" id="search-box" placeholder="Busca un juego">
+  <input #searchBox placeholder="Inserta un juego..." id="search-box" (input)="search(searchBox.value)"/>
     
+  <ul class="search-result">
+    <li *ngFor="let videogame of videogames$ | async">
+      <a routerLink="detail/{{videogame.id}}" (click)="search('')" (click)="searchBox.value = ''">{{videogame.name}}</a>
+    </li>
+  </ul>
+</div>
+
   
-    <!--
-    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
-    <ul class="search-result">
-      <li *ngFor="let hero of heroes$ | async" >
-    </ul>
-    -->
-  </div>
+   

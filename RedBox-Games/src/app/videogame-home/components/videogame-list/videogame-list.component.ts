@@ -19,7 +19,7 @@ export class VideogameListComponent implements OnInit,OnChanges {
   }
 
   ngOnInit(): void {
-  setTimeout(()=>this.filterArray(),500);
+    setTimeout(()=>this.filterArray(),500);
   }  
   
 public filterArray(){

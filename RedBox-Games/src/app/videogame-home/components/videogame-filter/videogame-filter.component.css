@@ -1,9 +1,13 @@
+*{
+    z-index: 0;
+}
+
 div{
     position: absolute;
     display: flex;
     flex-direction: row;
     margin-top: 2.5em;
-    left: 14em;
+    left: 85em;
 }
 
     p{
