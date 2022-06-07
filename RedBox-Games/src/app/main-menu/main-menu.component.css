@@ -1,0 +1,30 @@
+
+*{
+    text-align: center;
+}
+
+h1{
+    padding: 1em;
+    font-size: 3em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5em;
+}
+
+img{
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 5px 10px 10px black;
+}
+
+    div h2{
+        padding: 2em;
+    }

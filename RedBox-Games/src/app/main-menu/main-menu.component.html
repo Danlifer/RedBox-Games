@@ -1,1 +1,8 @@
-<p>main-menu works!</p>
+<h1>Top Juegos Actuales</h1>
+
+<main>
+    <div class="top-games-list" *ngFor="let videogame of videogames">
+        <a routerLink="/detail/{{videogame.id}}"><img src="{{videogame.img}}" alt="Image of {{videogame.name}}"></a>
+        <h2>{{videogame.name}}</h2>
+    </div>
+</main>
