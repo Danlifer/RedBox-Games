@@ -6,13 +6,12 @@ import { VideogameHomeComponent } from '../videogame-home/videogame-home.compone
 const routes: Routes = [
   { path: 'detail/:id', component: VideogameDetailComponent },
   { path: 'home', component: VideogameHomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**',  component: VideogameHomeComponent, pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
   declarations: [],
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

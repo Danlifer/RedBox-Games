@@ -4,5 +4,4 @@ export interface Videogame{
     id:number;
     year:number;
     company:String;
-    detail: String;
 }

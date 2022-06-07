@@ -15,11 +15,4 @@ export class VideogameService {
   getVideogames(): Observable<Videogame[]> {
     return this.http.get<Videogame[]>(this.VideogamesUrl);
   }
-
-  getVideogame(id: number): Observable<Videogame> {
-
-    const url = `${this.VideogamesUrl}/${id}`;
-  
-    return this.http.get<Videogame>(url);
-  }
 }
