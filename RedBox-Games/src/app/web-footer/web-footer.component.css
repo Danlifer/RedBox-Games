@@ -1,0 +1,23 @@
+footer{
+    background-color: #404040;
+    width: 100%;
+    height: 10vh;
+    z-index: 100;
+    clear: both;
+}
+
+h3{
+    color: white;
+    margin-left: 1em;
+    display: inline-block;
+    line-height: 4.5em;
+}
+
+.image-footer{
+    float:  right;
+}
+
+.image-footer a img{
+    width: 5em;
+    padding: 0 1em 0 1em;
+}

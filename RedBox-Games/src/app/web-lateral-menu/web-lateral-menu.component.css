@@ -1,0 +1,27 @@
+aside{
+    height: 200vh;
+    width: 10vw;
+    position: relative;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #FF0400;
+    padding-top: 60px;
+    float: left;
+}
+
+    aside > a{
+        text-decoration: none;
+        font-size: 1.2em;
+        display: block;
+        padding: 1em;
+        color: white;
+    }
+
+        a:hover{
+            background-color: rgb(255, 136, 136);
+        }
+
+        a:active{
+            background-color: rgb(255, 174, 174);
+        }

@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+  .grid-item {
+    padding: 2em;
+    font-size: 2em;
+    text-align: center;
+  }
+
+
+img{
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+}
+
+li{
+    list-style: none;
+}
