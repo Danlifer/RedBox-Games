@@ -28,5 +28,10 @@ export class VideogameSearchComponent implements OnInit {
 
   search(term: string):void{
     this.searchTerms.next(term);
+    console.log(term);
+  }
+
+  onBlurEvent(event: any){
+    this.searchTerms.next('');
   }
 }

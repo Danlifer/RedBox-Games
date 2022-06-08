@@ -4,7 +4,10 @@
     
   <ul class="search-result">
     <li *ngFor="let videogame of videogames$ | async">
-      <a routerLink="detail/{{videogame.id}}" (click)="search('')" (click)="searchBox.value = ''">{{videogame.name}}</a>
+      <a routerLink="detail/{{videogame.id}}" 
+        (blur)="onBlurEvent($event)" 
+          (click)="searchBox.value = ''">{{videogame.name}}
+      </a> <!-- (click)="search('')" (click)="searchBox.value = ''""-->
     </li>
   </ul>
 </div>
