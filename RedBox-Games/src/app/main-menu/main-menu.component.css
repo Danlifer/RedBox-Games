@@ -12,6 +12,7 @@ main{
     display: grid;
     grid-template-columns: auto auto;
     margin: 5em;
+    height: fit-content;
 }
 
 img{

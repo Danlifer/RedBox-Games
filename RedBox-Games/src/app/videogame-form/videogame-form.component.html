@@ -1,0 +1,12 @@
+<main>
+    <div class="form">
+        <h1>Formulario de registro</h1>
+        <input type="text" placeholder="Nombre" #name>
+        <input type="text" placeholder="Año" #year>
+        <input type="text" placeholder="Desarrolladora" #company>
+        <input type="text" placeholder="Detalles del videojuego" #detail>
+        <input type="text" placeholder="Url de la imagen" #img>
+
+        <button (click)="add(name.value, year.value, company.value, detail.value, img.value)">Guardar</button>
+    </div>
+</main>

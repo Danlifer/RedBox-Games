@@ -17,6 +17,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
 import { VideogameFilterComponent } from './videogame-home/components/videogame-filter/videogame-filter.component';
 import { VideogameHomeComponent } from './videogame-home/videogame-home.component';
 import { VideogameListComponent } from './videogame-home/components/videogame-list/videogame-list.component';
+import { VideogameFormComponent } from './videogame-form/videogame-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { VideogameListComponent } from './videogame-home/components/videogame-li
     WebLateralMenuComponent,
     VideogameFilterComponent,
     VideogameHomeComponent,
-    VideogameListComponent
+    VideogameListComponent,
+    VideogameFormComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainMenuComponent } from '../main-menu/main-menu.component';
 import { VideogameDetailComponent } from '../videogame-detail/videogame-detail.component';
+import { VideogameFormComponent } from '../videogame-form/videogame-form.component';
 import { VideogameHomeComponent } from '../videogame-home/videogame-home.component';
 
 const routes: Routes = [
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: 'home', component:  MainMenuComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'list', component:  VideogameHomeComponent},
+  { path : 'form', component: VideogameFormComponent},
   { path: '**',  component: VideogameHomeComponent, pathMatch: 'full' }
 ];
 

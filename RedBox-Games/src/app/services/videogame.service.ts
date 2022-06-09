@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, tap } from 'rxjs';
 import { Videogame } from '../models/videogame';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -30,5 +30,14 @@ export class VideogameService {
     return this.http.get<Videogame[]>(`${this.VideogamesUrl}/?name=${term}`);
   }
 
+  httpOptions = {
+
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  
+  };
+
+  addVideogame(term: Videogame): Observable<Videogame>{
+    return this.http.post<Videogame>(this.VideogamesUrl, term, this.httpOptions);
+  }
 
 }
